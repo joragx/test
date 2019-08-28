@@ -1,0 +1,321 @@
+@charset "utf-8";
+/*--=====default style start=====--*/
+
+/*default css*/
+#about, #buy, #gallery, #contact{
+    outline: none;
+}
+.bgo-light{
+    background: rgba(255,255,255,.5);
+}
+.page-body{
+    font-family: 'Quicksand', sans-serif;
+/*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+}
+
+/*hero css*/
+.hero-container{
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.hero-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content-title{
+    margin-bottom: 50px;
+}
+.hero-content-title h2{
+    font-size: 56px;
+    font-weight: 700;
+    color: #363636;
+}
+.hero-content-title p{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    color: #363636;
+}
+.hero-content-title h3{
+    font-size: 108px;
+    font-family: 'Dancing Script', cursive;
+    color: #363636;
+}
+
+.hero-content nav ul{
+    display: flex;
+}
+.hero-content nav ul li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    background: #16CFC1;
+    padding: 5px 15px;
+    margin-right: 20px;
+    min-width: 100px;
+    color: #363636;
+    font-weight: 500;
+    transition: all .3s;
+}
+.hero-content nav ul li a:hover{
+    color: #16CFC1;
+    background: #454E5C;
+    transition: all .3s;
+}
+.hero-content nav ul li:last-child a{
+    margin-right: 0;
+}
+
+/*about css*/
+.about-content{
+    display: flex;
+    justify-content: center;
+    background: #363636;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+.about-content > div{
+    width: 50%;
+}
+.about-content > div h2{
+    margin: 15px 0;
+}
+.about-content > div p{
+    margin-bottom: 10px;
+}
+.about-content > div p:last-of-type{
+    margin-bottom: 0;
+}
+.about-content > div img{
+    width: 100%;
+}
+.about-content > div a{
+    display: block;
+    text-align: right;
+    color: #fff;
+}
+.about-profile-photo{
+    line-height: 0;
+}
+.about-description{
+    padding: 0 50px;
+    box-sizing: border-box
+}
+
+/*buy css*/
+.buy-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 100px 0;
+}
+.buy-content > div{
+    width: 50%;
+}
+.buy-content > div img{
+    width: 80%;
+}
+.ebook-cover{
+    line-height: 0;
+    text-align: center;
+}
+.ebook-feature{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.ebook-feature h2{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.ebook-feature ul li{
+    margin-bottom: 10px;
+/*    font-size: 22px;*/
+/*    text-align: center;*/
+}
+.ebook-feature ul li::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f02d';
+    margin-right: 10px;
+}
+.buy-now{
+    text-align: center;
+}
+.buy-now p{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.buy-now p:last-of-type{
+    margin-bottom: 0;
+}
+.buy-now a{
+    display: inline-block;
+    background: #16CFC1;
+    padding: 5px 30px;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #454E5C;
+    font-size: 24px;
+    margin: 15px 0;
+    transition: all .3s;
+}
+.buy-now a:hover{
+    background: #454E5C;
+    color: #16CFC1;
+}
+.ebook-feature > p{
+    text-align: center;
+    font-size: 22px;
+}
+.ebook-feature > p > a{
+    display: block;
+    font-size: 22px;
+    color: #16CFC1;
+    transition: all .3s;
+}
+.ebook-feature > p > a:hover{
+    color: #454E5C;
+    transition: all .3s;
+}
+
+/*gallery css*/
+.gallery-list{
+    column-width: 380px;
+    column-gap: 3px;
+    width: 100%;
+}
+.gallery-item{
+    position: relative;
+    line-height: 0;
+    margin-bottom: 3px;
+}
+.gallery-item img{
+    width: 100%;
+    height: auto;
+}
+
+/*contact css*/
+.contact-container{
+    background: #292929;
+    
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+/*    align-items: center;*/
+    color: #fff;
+    padding: 50px 0;
+}
+.contact-content > div{
+    width: 50%;
+}
+.contact-content > div h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.contact-form form input, .contact-form form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #101010;
+    border: none;
+    color: #fff;
+    resize: none;
+}
+.contact-form form input[type="submit"]{
+    margin-bottom: 0;
+}
+
+.reviews{
+    padding: 0 50px;
+    box-sizing: border-box
+}
+.reviews p{
+    margin-bottom: 10px;
+/*    font-size: 14px;*/
+    font-style: italic
+}
+.reviews p span{
+    color: #16CFC1;
+    font-style: normal;
+}
+
+/*copyright css*/
+.copyright-container{
+    background: #363636;
+    padding: 10px 0;
+}
+.copyright-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    color: #fff;
+    font-size: 14px;
+}
+.social-link a{
+    font-size: 14px;
+    display: block;
+    color: #fff;
+}
+.social-link a i{
+/*    border: 1px solid #000;*/
+    background: #44619D;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+/*jq component*/
+/*return to top*/
+#return-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 30px;
+    height: 30px;
+    display: block;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 10px;
+}
+/*--=====default style end=====--*/
+
